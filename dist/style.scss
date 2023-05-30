@@ -1,0 +1,58 @@
+.intro, .about, .booking {
+
+    display: flex;
+    justify-content: space-around;
+    min-height: 80vh;
+}
+
+.intro-left, .about-left, .booking-right {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+
+    h6 {
+        
+    }
+}
+
+.intro-right, .about-right, .booking-left {
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.cta {
+
+    display: flex;
+    justify-content: center;
+    margin: 5em 0em;
+}
+
+.cta-cont {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    border-radius: 1em;
+    background: orangered;
+    width: 90%;
+
+}
+
+footer {
+
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    width: 100%;
+    padding-top: 1em;
+    z-index: 1;
+    text-align: center;
+}
