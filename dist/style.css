@@ -7,9 +7,17 @@
 .intro-left, .about-left, .booking-right {
   display: flex;
   flex-direction: column;
+  gap: 1em;
   width: 50%;
   justify-content: center;
 }
+.intro-left h1, .intro-left h2, .intro-left h3, .intro-left h6, .about-left h1, .about-left h2, .about-left h3, .about-left h6, .booking-right h1, .booking-right h2, .booking-right h3, .booking-right h6 {
+  font-weight: bold;
+}
+.intro-left button, .about-left button, .booking-right button {
+  width: 20%;
+}
+
 .intro-right, .about-right, .booking-left {
   display: flex;
   align-items: center;
@@ -25,10 +33,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
   padding: 3em;
   border-radius: 1em;
   background: orangered;
   width: 90%;
+}
+.cta-cont .cta-left h2 {
+  font-weight: bold;
 }
 
 footer {
