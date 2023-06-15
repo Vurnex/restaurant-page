@@ -9,11 +9,13 @@ module.exports = {
     },
     devServer: {
         static: './dist',
+        port: 8080,
+        hot: true,
     },
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-          title: 'Restaurant',
+          template: './src/index.html'
         }),
       ],
     output: {
