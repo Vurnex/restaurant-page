@@ -1,3 +1,8 @@
+import nav from "./headers/nav";
+import tabs from "./headers/tabs";
+
+import home from "./pages/home";
+
 export default function pageLoad() {
 
     //console.log('I get called from pageLoad.js!');
@@ -8,8 +13,12 @@ export default function pageLoad() {
     const header = document.createElement('h1');
     header.innerHTML = "Test header";
 
-    content.appendChild(header);
+    content.appendChild(nav());
+    content.appendChild(tabs());
 
+    content.appendChild(home());
+    
+    
     return content;
 
 }

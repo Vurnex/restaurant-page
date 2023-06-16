@@ -54,4 +54,13 @@ footer {
   padding-top: 1em;
   z-index: 1;
   text-align: center;
+}
+
+/* Custom Bootstrap */
+.navbar > .container-fluid {
+  justify-content: center;
+}
+
+.nav-tabs {
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
