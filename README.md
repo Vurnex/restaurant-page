@@ -4,6 +4,7 @@ Restaurant page project for the Odin Project. The purpose of the project is to p
 ## What I Learned
 - Usage of webpack
 - Render page content exclusively through JavaScript
+- Create re-usable components
 
 ## Challenges I Faced
 - Getting content to show up while using JavaScript

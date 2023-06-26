@@ -1,7 +1,7 @@
-export default function home() {
+export default function about() {
 
     const intro = document.createElement('section');
-    intro.setAttribute('class', 'intro section-position');
+    intro.setAttribute('class', 'about section-position');
 
     const intro_left = document.createElement('div');
     intro_left.setAttribute('class', 'intro-left sub-section-position');
@@ -12,8 +12,8 @@ export default function home() {
     const intro_h1 = document.createElement('h1');
     const intro_para = document.createElement('p');
 
-    intro_h6.textContent = "Stand Out";
-    intro_h1.textContent = "Pizza Restaurant Site";
+    intro_h6.textContent = "About";
+    intro_h1.textContent = "ABout Pizza Restaurant Site";
     intro_para.textContent = 
     `
     Modern and carefully prepared pizzas for every customer - 
