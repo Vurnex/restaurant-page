@@ -1,4 +1,4 @@
-export default function about() {
+export default function menu() {
 
     const intro = document.createElement('section');
     intro.setAttribute('class', 'about section-position');
@@ -13,7 +13,7 @@ export default function about() {
     const intro_para = document.createElement('p');
 
     intro_h6.textContent = "About";
-    intro_h1.textContent = "ABout Pizza Restaurant Site";
+    intro_h1.textContent = "About Pizza Restaurant Site";
     intro_para.textContent = 
     `
     Modern and carefully prepared pizzas for every customer - 

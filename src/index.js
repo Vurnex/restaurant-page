@@ -35,7 +35,7 @@ document.getElementById('tab2').addEventListener('click', () => {
     let cont = document.getElementById('main-section');
 
     content.removeChild(cont);
-    content.appendChild(pageLoad("about"));
+    content.appendChild(pageLoad("menu"));
 });
 
 document.getElementById('tab3').addEventListener('click', () => {

@@ -2,7 +2,7 @@ import nav from "./headers/nav";
 import tabs from "./headers/tabs";
 
 import home from "./pages/home";
-import about from "./pages/about";
+import menu from "./pages/menu";
 
 export default function pageLoad(focus) {
 
@@ -18,9 +18,9 @@ export default function pageLoad(focus) {
         content.appendChild(home());
     }
     
-    else if (focus == "about") {
+    else if (focus == "menu") {
 
-        content.appendChild(about());
+        content.appendChild(menu());
 
     }
 
