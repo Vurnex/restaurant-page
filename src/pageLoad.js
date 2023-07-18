@@ -10,13 +10,7 @@ export default function pageLoad(focus) {
 
     const content = document.createElement('section');
     content.setAttribute('class', 'main');
-    content.setAttribute('id', 'main-section')
-
-    const header = document.createElement('h1');
-    header.innerHTML = "Test header";
-
-    content.appendChild(nav());
-    content.appendChild(tabs());
+    content.setAttribute('id', 'main-section');
 
     if (focus == "home") {
 
