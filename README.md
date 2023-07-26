@@ -5,9 +5,11 @@ Restaurant page project for the Odin Project. The purpose of the project is to p
 - Usage of webpack
 - Render page content exclusively through JavaScript
 - Create re-usable components
+- Selecting a dynamic element or an element after it has been added to the DOM using JavaScript.
 
 ## Challenges I Faced
 - Getting content to show up while using JavaScript
+- Showing tabbed page specific content on tab click
 
 Image credit: [Vecteezy](vecteezy.com)
 
