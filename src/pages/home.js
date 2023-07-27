@@ -1,5 +1,9 @@
+import pizza_intro from "../img/pizza-intro.jpg";
+
 export default function home() {
 
+
+    //Intro
     const intro = document.createElement('section');
     intro.setAttribute('class', 'intro section-position');
 
@@ -27,6 +31,18 @@ export default function home() {
     intro_left.appendChild(button('Get Started'));
 
     intro.appendChild(intro_left);
+
+    const intro_right = document.createElement('div');
+    intro_right.setAttribute('class', 'intro-right');
+
+    
+    const intro_img = document.createElement('img');
+    intro_img.setAttribute('src', pizza_intro);
+    intro_img.setAttribute('width', '500px');
+
+    intro_right.appendChild(intro_img);
+
+    intro.appendChild(intro_right);
 
     return intro;
     
