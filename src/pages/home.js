@@ -1,5 +1,6 @@
 import pizza_intro from "../img/pizza-intro.jpg";
 import group_img from "../img/group.jpg";
+import reservation_img from "../img/reservation.jpg";
 
 export default function home() {
 
@@ -31,7 +32,7 @@ export default function home() {
     intro_left.appendChild(intro_h6);
     intro_left.appendChild(intro_h1);
     intro_left.appendChild(intro_para);
-    intro_left.appendChild(button('Get Started'));
+    intro_left.appendChild(button('Get Started', 'btn btn-danger'));
 
     intro.appendChild(intro_left);
 
@@ -73,7 +74,7 @@ export default function home() {
     about_left.appendChild(about_h6);
     about_left.appendChild(about_h1);
     about_left.appendChild(about_para);
-    about_left.appendChild(button('View More'));
+    about_left.appendChild(button('View More', 'btn btn-danger'));
 
     about.appendChild(about_left);
 
@@ -88,19 +89,56 @@ export default function home() {
 
     about.appendChild(about_right);
 
+    //Booking
+
+    const booking = document.createElement('section');
+    booking.setAttribute('class', 'booking');
+
+    const booking_left = document.createElement('div');
+    booking_left.setAttribute('class', 'booking-left');
+
+    const booking_img = document.createElement('img');
+    booking_img.setAttribute('src', reservation_img);
+    booking_img.setAttribute('width', '500px');
+
+    booking_left.appendChild(booking_img);
+    
+    booking.appendChild(booking_left);
+
+    const booking_right = document.createElement('div');
+    booking_right.setAttribute('class', 'booking-right');
+
+    const booking_h3 = document.createElement('h3');
+    const booking_para = document.createElement('p');
+
+    booking_h3.textContent = "RESERVATIONS MADE EASY";
+    booking_para.textContent = 
+    `
+    Easy & direct reservation functionality. Connect with your 
+    profile in a straightforward manner using existing services.
+    
+    `;
+
+    booking_right.appendChild(booking_h3);
+    booking_right.appendChild(booking_para);
+    booking_right.appendChild(button('View More', 'btn btn-danger'));
+
+    booking.appendChild(booking_right);
+
 
     //Append content
     content.appendChild(intro);
     content.appendChild(about);
+    content.appendChild(booking);
 
     return content;
     
 }
 
-function button(txt) {
+function button(txt, btnType) {
 
     const button = document.createElement('button');
-    button.setAttribute('class', 'btn btn-danger');
+    button.setAttribute('class', btnType);
     button.innerHTML = txt;
 
     return button;
