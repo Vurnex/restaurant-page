@@ -40,5 +40,10 @@ document.getElementById('tab2').addEventListener('click', () => {
 
 document.getElementById('tab3').addEventListener('click', () => {
 
+    let cont = document.getElementById('main-section');
+
+    content.removeChild(cont);
+    content.appendChild(pageLoad("contact"));
+
 
 });

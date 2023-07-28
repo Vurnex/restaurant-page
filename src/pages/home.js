@@ -2,6 +2,8 @@ import pizza_intro from "../img/pizza-intro.jpg";
 import group_img from "../img/group.jpg";
 import reservation_img from "../img/reservation.jpg";
 
+import footer from "../footer/footer";
+
 export default function home() {
 
     //Append all content to this div
@@ -159,22 +161,13 @@ export default function home() {
 
     cta_cont.appendChild(cta_right);
 
-    
-    //Footer
-    const footer = document.createElement('footer');
-    const footer_para = document.createElement('p');
-
-    footer_para.textContent = "Copyright ©2023 All rights reserved | Pizza Restaurant";
-
-    footer.appendChild(footer_para);
-
 
     //Append content
     content.appendChild(intro);
     content.appendChild(about);
     content.appendChild(booking);
     content.appendChild(cta);
-    content.appendChild(footer);
+    content.appendChild(footer());
 
     return content;
     

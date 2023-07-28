@@ -3,6 +3,7 @@ import tabs from "./headers/tabs";
 
 import home from "./pages/home";
 import menu from "./pages/menu";
+import contact from "./pages/contact";
 
 export default function pageLoad(focus) {
 
@@ -25,6 +26,8 @@ export default function pageLoad(focus) {
     }
 
     else if (focus == "contact") {
+
+        content.appendChild(contact());
 
     }    
     
