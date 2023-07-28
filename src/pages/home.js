@@ -125,11 +125,56 @@ export default function home() {
 
     booking.appendChild(booking_right);
 
+    //Call To Action
+    const cta = document.createElement('section');
+    cta.setAttribute('class', 'cta');
+
+    const cta_cont = document.createElement('div');
+    cta_cont.setAttribute('class', 'cta-cont');
+
+    cta.appendChild(cta_cont);
+
+    const cta_left = document.createElement('div');
+    cta_left.setAttribute('class', 'cta-left');
+
+    cta_cont.appendChild(cta_left);
+
+    const cta_h2 = document.createElement('h2');
+    const cta_para = document.createElement('p');
+
+    cta_h2.textContent = "Want to see our work?";
+    cta_para.textContent = 
+    `
+    We're especially proud of these selections.
+    
+    `;
+
+    cta_left.appendChild(cta_h2);
+    cta_left.appendChild(cta_para);
+
+    const cta_right = document.createElement('div');
+    cta_right.setAttribute('class', 'cta-right');
+
+    cta_right.appendChild(button('Take a look', 'btn btn-dark'));
+
+    cta_cont.appendChild(cta_right);
+
+    
+    //Footer
+    const footer = document.createElement('footer');
+    const footer_para = document.createElement('p');
+
+    footer_para.textContent = "Copyright ©2023 All rights reserved | Pizza Restaurant";
+
+    footer.appendChild(footer_para);
+
 
     //Append content
     content.appendChild(intro);
     content.appendChild(about);
     content.appendChild(booking);
+    content.appendChild(cta);
+    content.appendChild(footer);
 
     return content;
     
